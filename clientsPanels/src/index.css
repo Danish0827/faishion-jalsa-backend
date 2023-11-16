@@ -1,0 +1,222 @@
+/* Add this CSS to your stylesheet */
+/* Customize scrollbar track */
+::-webkit-scrollbar {
+  width: 5px;
+  /* Adjust width as needed */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  /* Change to desired background color */
+}
+
+/* Customize scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  /* Change to desired handle color */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #eee;
+  /* Change to desired handle hover color */
+}
+
+.border-gradient-blue-orange {
+  border-image: linear-gradient(to right, #ec642a 60%, #25265e 40%);
+  border-image-slice: 1;
+}
+
+.text-gradient-blue-orange {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #ec642a 60%, #25265e 40%);
+}
+
+.subcategory-container {
+  background-color: #f7f7f7;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+  transition: all 0.3s ease;
+}
+
+.subcategory-container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.subcategory-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.subcategory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 16px;
+  align-items: center;
+}
+
+.input-field {
+  border: none;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+  padding: 8px 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.input-field:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.remove-button {
+  color: #ff4d4f;
+  font-weight: bold;
+}
+
+.file-upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.file-upload-container:hover {
+  border-color: #1677ff;
+}
+
+.file-upload-label {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+}
+
+.file-upload-label span {
+  display: block;
+}
+
+.file-upload-label span:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.filepond--item {
+  width: 33% !important;
+  height: 250px !important;
+}
+
+.filepond--file [data-align*="right"] {
+  display: none !important;
+}
+
+.notification-container {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+  transition: all 0.3s ease;
+}
+
+.notification-container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.notification-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.notification-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 16px;
+  align-items: center;
+}
+
+.notification-field {
+  border: none;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+  padding: 8px 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.notification-field:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notification-button {
+  color: #ff4d4f;
+  font-weight: bold;
+}
+
+.spinner {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 9px solid;
+  border-color: #dbdcef;
+  border-right-color: #474bff;
+  animation: spinner-d3wgkg 1s infinite linear;
+}
+
+@keyframes spinner-d3wgkg {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+:where(.css-dev-only-do-not-override-14wwjjs).ant-modal .ant-modal-content {
+  box-shadow: none !important;
+}
+
+.custom-form .ant-form-item-label {
+  text-align: left;
+  /* Align labels to the left */
+  display: block;
+  /* Display labels as block elements */
+  margin-bottom: 8px;
+  /* Adjust label spacing as needed */
+}
+
+.custom-form .ant-form-item-control {
+  display: block;
+  /* Display controls as block elements */
+}
+
+.ant-input {
+  border: 1px solid #ddd !important;
+  border-radius: 3px !important;
+  padding: 8px 12px !important;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/* Remove default Ant Design input border */
+.ant-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.ant-steps .ant-steps-item-process .ant-steps-item-icon {
+  background-color: #081831 !important;
+  border-color: #081831 !important;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
